@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Lavoura' ;
+    src: url('../fonts/Sporter.ttf')format('Truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --cor0:#F5F5F5;
+    --cor1:#BF0B2C;
+    --cor2:#A81620;
+    --cor3:#5E0C12;
+    --cor4:#FFB20F;
+    --fonte-logo:'Lavoura', Arial, Helvetica, sans-serif;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-titulos:'Cairo', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+header {
+    background-color: white;
+    height: 100px;
+    text-align: center;
+}
+
+header > h1 {
+    background-image: linear-gradient(to right, red, var(--cor1),var(--cor2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font: italic 700 1.8em var(--fonte-titulos);
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.26);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+header > p {
+    background-image: linear-gradient(to right, red, var(--cor1),var(--cor2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.144);
+    font: italic 700 1em var(--fonte-titulos);
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.295);
+
+}
+
+nav > a {
+    color: black;
+    font-family:var(--fonte-titulos);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 8px 8px 25px;
+}
+
+nav > a:hover {
+    background-color: #f5f5f5a2;
+}
+
+main {
+    min-width: 200px;
+    max-width: 1000px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.295);
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+main  h1 {
+    font-family: var(--fonte-titulos);
+    font-size: 1.5em;
+    color: var(--cor2);
+}
+
+main h2 {
+    background-image: linear-gradient(to left, var(--cor2), transparent);
+    font-family: var(--fonte-titulos);
+    font-size: 1.5em;
+    color: var(--cor2);
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+    font-family: var(--fonte-padrao);
+}
+
+img.perfil{
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    max-width: 80%;
+
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+aside {
+    background-color: rgba(255, 168, 168, 0.363);
+    border-top-right-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+aside > h2 {
+    border-radius: 8px;
+    padding: 5px;
+    margin: -10px -10px 10px -10px;
+}
+
+aside > ul {
+    columns: 2;
+    list-style-position: inside;
+    overflow-wrap: break-word;
+}
+
+section > a > h3 {
+    width: 250px;
+    background-image: linear-gradient(to top, #bf0b2c91, #bf0b2c23);
+    color: var(--cor1);
+    font: normal bold 1.2em var(--fonte-titulos);
+    margin-top: 30px;
+    margin: 30px auto 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.295);
+}
+
+section > a {
+    text-decoration: none;
+}
+
+section h3:hover {
+    background-image: linear-gradient(to top, var(--cor2), #bf0b2c23);
+    color: var(--cor3);
+
+}
+
+
+div.video {
+    position: relative;
+    padding-bottom: 58%;
+    margin: 10px -20px -25px -20px;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 8px;
+    
+}
+
+footer {
+    background-color: var(--cor4);
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+}
+footer > p {
+    font: normal 700 0.9em var(--fonte-titulos);
+    padding-top: 10px;
+}
+
+ footer a {
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+footer a:hover {
+    background-color: white;
+}
